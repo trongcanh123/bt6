@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:paddingTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp">
+
+
+        <EditText
+            android:id="@+id/edtdangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/goc"
+            android:hint="Email"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/goc"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/edtpassword"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="120dp"
+                android:buttonTint="@color/white"
+                android:gravity="right"
+                android:paddingStart="10dp"
+                android:text="Remember me"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btsignin"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#32C585"
+            android:text="Sign In"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="29dp"
+
+        android:text="Dont't have an account?Sign Up"
+        android:textColor="#ff0"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
